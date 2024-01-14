@@ -4,7 +4,7 @@ int main() {
     int matris[5][5];
     int hedef;
 
-    // Kullanıcıdan 5x5 matris girdisini alın
+    // KullanÄ±cÄ±dan 5x5 matris girdisini alÄ±n
     printf("5x5 boyutunda bir matris girin:\n");
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
@@ -12,23 +12,23 @@ int main() {
         }
     }
 
-    // Aranacak hedef değeri alın
+    // Aranacak hedef deÄŸeri alÄ±n
     printf("Aranacak hedef degeri girin: ");
     scanf("%d", &hedef);
 
-    // Matris içinde hedefi arayın
-    int bulundu = 0; // Hedef değerin bulunup bulunmadığını kontrol etmek için bir bayrak
+    // Matris iÃ§inde hedefi arayÄ±n
+    int bulundu = 0; // Hedef deÄŸerin bulunup bulunmadÄ±ÄŸÄ±nÄ± kontrol etmek iÃ§in bir bayrak
 
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             if (matris[i][j] == hedef) {
                 printf("Hedef deger %d, (%d, %d) konumunda bulundu.\n", hedef, i, j);
-                bulundu = 1; // Hedef değer bulunduğunda bayrağı ayarla
+                bulundu = 1; // Hedef deÄŸer bulunduÄŸunda bayraÄŸÄ± ayarla
                 break;
             }
         }
         if (bulundu) {
-            break; // İç döngüden çıkın
+            break; // Ä°Ã§ dÃ¶ngÃ¼den Ã§Ä±kÄ±n
         }
     }
 
